@@ -1,0 +1,146 @@
+[
+ {
+  "code": "cur.execute(\"SELECT * FROM users WHERE name = '\" + name + \"'\")",
+  "cwe": "CWE-89 SQL 인젝션",
+  "vulnerable": true,
+  "id": 0
+ },
+ {
+  "code": "cur.execute(f\"DELETE FROM orders WHERE id = {order_id}\")",
+  "cwe": "CWE-89 SQL 인젝션",
+  "vulnerable": true,
+  "id": 1
+ },
+ {
+  "code": "$r = mysqli_query($db, \"SELECT * FROM posts WHERE id=\" . $_GET['id']);",
+  "cwe": "CWE-89 SQL 인젝션",
+  "vulnerable": true,
+  "id": 2
+ },
+ {
+  "code": "os.system(\"ping -c 1 \" + host)",
+  "cwe": "CWE-78 명령어 인젝션",
+  "vulnerable": true,
+  "id": 3
+ },
+ {
+  "code": "subprocess.run(f\"tar -xzf {archive}\", shell=True)",
+  "cwe": "CWE-78 명령어 인젝션",
+  "vulnerable": true,
+  "id": 4
+ },
+ {
+  "code": "system(\"convert \" . $_GET['file'] . \" out.png\");",
+  "cwe": "CWE-78 명령어 인젝션",
+  "vulnerable": true,
+  "id": 5
+ },
+ {
+  "code": "data = open(\"/var/data/\" + filename).read()",
+  "cwe": "CWE-22 경로 조작",
+  "vulnerable": true,
+  "id": 6
+ },
+ {
+  "code": "return send_file(os.path.join(BASE, request.args[\"f\"]))",
+  "cwe": "CWE-22 경로 조작",
+  "vulnerable": true,
+  "id": 7
+ },
+ {
+  "code": "readfile(\"uploads/\" . $_GET['name']);",
+  "cwe": "CWE-22 경로 조작",
+  "vulnerable": true,
+  "id": 8
+ },
+ {
+  "code": "return \"<h1>Hello \" + request.args[\"name\"] + \"</h1>\"",
+  "cwe": "CWE-79 XSS",
+  "vulnerable": true,
+  "id": 9
+ },
+ {
+  "code": "el.innerHTML = location.hash.slice(1);",
+  "cwe": "CWE-79 XSS",
+  "vulnerable": true,
+  "id": 10
+ },
+ {
+  "code": "echo \"<p>\" . $_GET['msg'] . \"</p>\";",
+  "cwe": "CWE-79 XSS",
+  "vulnerable": true,
+  "id": 11
+ },
+ {
+  "code": "aws_secret = \"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\"",
+  "cwe": "CWE-798 하드코딩 비밀",
+  "vulnerable": true,
+  "id": 12
+ },
+ {
+  "code": "conn = psycopg2.connect(host=\"db\", user=\"admin\", password=\"P@ssw0rd123\")",
+  "cwe": "CWE-798 하드코딩 비밀",
+  "vulnerable": true,
+  "id": 13
+ },
+ {
+  "code": "const JWT_SECRET = \"secret123\";",
+  "cwe": "CWE-798 하드코딩 비밀",
+  "vulnerable": true,
+  "id": 14
+ },
+ {
+  "code": "obj = pickle.loads(request.data)",
+  "cwe": "CWE-502/327/338/95 기타",
+  "vulnerable": true,
+  "id": 15
+ },
+ {
+  "code": "cfg = yaml.load(request.data)",
+  "cwe": "CWE-502/327/338/95 기타",
+  "vulnerable": true,
+  "id": 16
+ },
+ {
+  "code": "stored = hashlib.md5(password.encode()).hexdigest()",
+  "cwe": "CWE-502/327/338/95 기타",
+  "vulnerable": true,
+  "id": 17
+ },
+ {
+  "code": "cur.execute(\"SELECT * FROM users WHERE name = %s\", (name,))",
+  "cwe": "안전",
+  "vulnerable": false,
+  "id": 18
+ },
+ {
+  "code": "ipaddress.ip_address(host)\nsubprocess.run([\"ping\", \"-c\", \"1\", host], check=True)",
+  "cwe": "안전",
+  "vulnerable": false,
+  "id": 19
+ },
+ {
+  "code": "p = (BASE / name).resolve()\nassert p.is_relative_to(BASE)\nreturn p.read_bytes()",
+  "cwe": "안전",
+  "vulnerable": false,
+  "id": 20
+ },
+ {
+  "code": "return render_template(\"hello.html\", name=request.args[\"name\"])",
+  "cwe": "안전",
+  "vulnerable": false,
+  "id": 21
+ },
+ {
+  "code": "el.textContent = location.hash.slice(1);",
+  "cwe": "안전",
+  "vulnerable": false,
+  "id": 22
+ },
+ {
+  "code": "password = os.environ[\"DB_PASSWORD\"]",
+  "cwe": "안전",
+  "vulnerable": false,
+  "id": 23
+ }
+]

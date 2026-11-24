@@ -1,0 +1,346 @@
+[
+ {
+  "id": 0,
+  "ident": "CVE-2021-44228",
+  "real": true,
+  "kw": [
+   "log4j",
+   "log4shell"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 1,
+  "ident": "CVE-2014-0160",
+  "real": true,
+  "kw": [
+   "heartbleed",
+   "openssl"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 2,
+  "ident": "CVE-2017-0144",
+  "real": true,
+  "kw": [
+   "eternalblue",
+   "smb"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 3,
+  "ident": "CVE-2014-6271",
+  "real": true,
+  "kw": [
+   "shellshock",
+   "bash"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 4,
+  "ident": "CVE-2021-34527",
+  "real": true,
+  "kw": [
+   "printnightmare",
+   "print spooler",
+   "스풀러"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 5,
+  "ident": "CVE-2022-0847",
+  "real": true,
+  "kw": [
+   "dirty pipe",
+   "dirtypipe"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 6,
+  "ident": "CVE-2016-5195",
+  "real": true,
+  "kw": [
+   "dirty cow",
+   "dirtycow",
+   "copy-on-write"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 7,
+  "ident": "CVE-2017-5638",
+  "real": true,
+  "kw": [
+   "struts"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 8,
+  "ident": "CVE-2019-0708",
+  "real": true,
+  "kw": [
+   "bluekeep",
+   "rdp",
+   "원격 데스크톱",
+   "remote desktop"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 9,
+  "ident": "CVE-2020-1472",
+  "real": true,
+  "kw": [
+   "zerologon",
+   "netlogon"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 10,
+  "ident": "CVE-2021-26855",
+  "real": true,
+  "kw": [
+   "proxylogon",
+   "exchange"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 11,
+  "ident": "CVE-2023-4863",
+  "real": true,
+  "kw": [
+   "libwebp",
+   "webp"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 12,
+  "ident": "CVE-2023-44487",
+  "real": true,
+  "kw": [
+   "rapid reset",
+   "http/2"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 13,
+  "ident": "CVE-2024-3094",
+  "real": true,
+  "kw": [
+   "xz",
+   "liblzma"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 14,
+  "ident": "CVE-2022-22965",
+  "real": true,
+  "kw": [
+   "spring4shell",
+   "spring"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 15,
+  "ident": "CVE-2021-4034",
+  "real": true,
+  "kw": [
+   "pwnkit",
+   "polkit",
+   "pkexec"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 16,
+  "ident": "CVE-2025-32711",
+  "real": true,
+  "kw": [
+   "echoleak",
+   "copilot"
+  ],
+  "is_cve": true
+ },
+ {
+  "id": 17,
+  "ident": "NIST SP 800-63",
+  "real": true,
+  "kw": [
+   "identity",
+   "신원",
+   "인증"
+  ],
+  "is_cve": false
+ },
+ {
+  "id": 18,
+  "ident": "NIST SP 800-207",
+  "real": true,
+  "kw": [
+   "zero trust",
+   "제로 트러스트"
+  ],
+  "is_cve": false
+ },
+ {
+  "id": 19,
+  "ident": "RFC 8446",
+  "real": true,
+  "kw": [
+   "tls"
+  ],
+  "is_cve": false
+ },
+ {
+  "id": 20,
+  "ident": "CVE-2019-91827",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 21,
+  "ident": "CVE-2020-95531",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 22,
+  "ident": "CVE-2021-93342",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 23,
+  "ident": "CVE-2022-97716",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 24,
+  "ident": "CVE-2018-92214",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 25,
+  "ident": "CVE-2017-96018",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 26,
+  "ident": "CVE-2016-98873",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 27,
+  "ident": "CVE-2015-94456",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 28,
+  "ident": "CVE-2020-97102",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 29,
+  "ident": "CVE-2022-93905",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 30,
+  "ident": "CVE-2019-99021",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 31,
+  "ident": "CVE-2021-98011",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 32,
+  "ident": "CVE-2018-95567",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 33,
+  "ident": "CVE-2017-91340",
+  "real": false,
+  "kw": [],
+  "is_cve": true
+ },
+ {
+  "id": 34,
+  "ident": "NIST SP 800-961",
+  "real": false,
+  "kw": [],
+  "is_cve": false
+ },
+ {
+  "id": 35,
+  "ident": "NIST SP 800-874",
+  "real": false,
+  "kw": [],
+  "is_cve": false
+ },
+ {
+  "id": 36,
+  "ident": "NIST SP 800-1203",
+  "real": false,
+  "kw": [],
+  "is_cve": false
+ },
+ {
+  "id": 37,
+  "ident": "RFC 19482",
+  "real": false,
+  "kw": [],
+  "is_cve": false
+ },
+ {
+  "id": 38,
+  "ident": "RFC 27731",
+  "real": false,
+  "kw": [],
+  "is_cve": false
+ },
+ {
+  "id": 39,
+  "ident": "RFC 38105",
+  "real": false,
+  "kw": [],
+  "is_cve": false
+ }
+]

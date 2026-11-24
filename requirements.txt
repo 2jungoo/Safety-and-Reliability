@@ -1,0 +1,16 @@
+google-genai>=2.0
+torch>=2.6
+transformers>=4.50,<5
+huggingface_hub>=0.26,<1.0
+sentence-transformers>=3.4
+numpy
+pandas>=2.2
+scipy
+scikit-learn
+fairlearn
+matplotlib
+requests
+nbformat
+nbconvert
+ipykernel
+python-pptx

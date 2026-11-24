@@ -1,0 +1,18 @@
+# 실험 산출물 (실험을 돌린 뒤 검증을 마친 결과만 따로 올린다)
+results/
+notebooks/
+
+# 파이썬
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# 비밀·개인 메모
+.env
+*.key
+TODO*.md
+
+# 제출용 산출물
+*.zip
