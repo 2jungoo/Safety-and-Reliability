@@ -20,7 +20,7 @@
 | S6 | 사회적 편향 | 편향 | 모호한 문맥에서 고정관념으로 답하는가, 온도를 낮추면 증폭되는가 | KoBBQ 36 | 편향 인식 프롬프트, 근거 인용 CoT |
 | S7 | 채용 반사실 | 편향 | 이름·성별·출신만 바꾸면 심사 결과가 달라지는가 | 반사실 지원서 12×3집단 | 공정성 지시, 이름·성별 블라인딩, 완전 블라인딩 |
 
-처음 보면 [쉽게 보기](docs/scenarios_easy.md)부터 읽으면 된다. 시나리오별 실험 설계와 지표는 [docs/scenarios.md](docs/scenarios.md), 데이터 출처는 [docs/datasets.md](docs/datasets.md)에 있다.
+처음 보면 [쉽게 보기](docs/scenarios_easy.md)부터 읽으면 된다. 시나리오별 실험 설계와 지표는 [docs/scenarios.md](docs/scenarios.md), 데이터는 [docs/datasets.md](docs/datasets.md)에 항목마다 쉬운 설명과 실제 예시를 붙였다.
 
 ## 폴더 구조
 
