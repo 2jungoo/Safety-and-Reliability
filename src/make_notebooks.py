@@ -1,11 +1,12 @@
 """scenarios/*.py (# %% 셀 형식) → notebooks/*.ipynb 변환, 선택적으로 실행.
-사용: python make_notebooks.py [--run] [s1 s2 ...]"""
+사용: python make_notebooks.py [--run] [--v2] [s1 s2 ...]
+--v2: scenarios_v2/ 의 현실성 업그레이드 시나리오를 대상으로 한다 (플래그가 없으면 v1인 scenarios/만 본다)."""
 import sys, re, pathlib
 import nbformat
 from nbformat.v4 import new_notebook, new_code_cell, new_markdown_cell
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-SC, NB = ROOT / "scenarios", ROOT / "notebooks"
+SC, NB = ROOT / ("scenarios_v2" if "--v2" in sys.argv else "scenarios"), ROOT / "notebooks"
 NB.mkdir(exist_ok=True)
 
 

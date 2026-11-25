@@ -5,6 +5,7 @@
 ## 현재 상태 (2026-11-25 오후)
 
 - 시나리오 S1~S7 코드 완성, 실험 결과 없음
+- v2 시나리오 S1~S4 코드 완성(`scenarios_v2/`, [scenarios_v2.md](scenarios_v2.md)), 실행 전. Gemini는 호출하지 않았다
 - 11/24에 `gemini-3.5-flash-lite`, `gemini-3.1-flash-lite`의 하루 한도(500회)를 모두 썼고 한국 시간 11/25 오후 5시쯤 초기화된다
 - 필요한 호출: 3.5-lite 약 240회(S1, S3, S7), 3.1-lite 약 440회(S2, S4, S5)와 S6 약 110회
 - 공개 데이터셋과 실제 사건·CVE 조사 완료 (`docs/open_datasets.md`). 사건·CVE 표 슬라이드는 `slides/incidents_slide.py`에 있다

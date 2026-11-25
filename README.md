@@ -42,6 +42,7 @@
 
 ```
 scenarios/   S1~S7 코드 (# %% 셀 형식 .py, 노트북으로 변환해 실행)
+scenarios_v2/ S1~S4 현실성 업그레이드 (`--v2` 플래그로 실행, docs/scenarios_v2.md)
 src/         common.py(Gemini 호출·캐시·Qwen·통계), make_notebooks.py, verify.py, dryrun.py
 slides/      pptx_helpers.py, build_slides.py (발표자료 틀. 결과 그림 자리는 더미)
 data/        데이터셋과 외부 조회 캐시(pypi_exists.json, nvd_cache.json)
@@ -69,6 +70,7 @@ python src/make_notebooks.py --run s2 s4 s5 s6   # gemini-3.1-flash-lite
 
 - [x] 시나리오 S1~S7 코드
 - [x] 데이터셋 구성
+- [x] v2 시나리오 코드 S1~S4 (`scenarios_v2/`, 실행 전)
 - [x] 발표자료 틀 (`slides/pptx_helpers.py`, `slides/build_slides.py`, 결과 그림 자리는 더미)
 - [ ] Gemini 실험 실행 (약 800회, 11/25 오후 5시 이후)
 - [ ] 검증 5단계 `src/verify.py` (V1 작성됨, V2~V5 미작성)
