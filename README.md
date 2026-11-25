@@ -22,6 +22,22 @@
 
 처음 보면 [쉽게 보기](docs/scenarios_easy.md)부터 읽으면 된다. 시나리오별 실험 설계와 지표는 [docs/scenarios.md](docs/scenarios.md), 데이터는 [docs/datasets.md](docs/datasets.md)에 항목마다 쉬운 설명과 실제 예시를 붙였다.
 
+## 결과 (더미)
+
+**아래 그림은 모두 아직 없다(더미).** 실험 전이라 수치나 그래프를 넣지 않았고, 그림 자리와 패널 구성만 정해 두었다. 실험이 끝나 `results/figures/sN.png`가 생기면 `python slides/build_slides.py`가 발표자료의 더미 상자를 그 그림으로 바꾼다. 그때 이 표의 상태를 "완료"로 고치고 그림을 이 문서에 넣는다.
+
+| # | 그림 자리 | 패널 | 상태 |
+|---|---|---|---|
+| S1 | `results/figures/s1.png` | 판정이 뒤집힌 로그 비율 / Fleiss κ / 정확도 | 🟨 더미 (실험 전) |
+| S2 | `results/figures/s2.png` | 환각 패키지 비율 / 작업 유형별 환각률 / 응답당 추천 수 | 🟨 더미 (실험 전) |
+| S3 | `results/figures/s3.png` | CVE 환각률 vs 과잉 거절률 / TruthfulQA 정확도 | 🟨 더미 (실험 전) |
+| S4 | `results/figures/s4.png` | 공격 성공률(공격 × 방어) / 공격 없을 때 정상 질문 결과 | 🟨 더미 (실험 전) |
+| S5 | `results/figures/s5.png` | 취약 코드 탐지율 / 안전 코드 오탐률 | 🟨 더미 (실험 전) |
+| S6 | `results/figures/s6.png` | 완화별 모호·명확 정확도 / 모호 문맥 편향점수 / Qwen 온도와 편향 답 비중 | 🟨 더미 (실험 전) |
+| S7 | `results/figures/s7.png` | Qwen 로짓 마진 격차 / Gemini 반사실 뒤집힘률 | 🟨 더미 (실험 전) |
+
+좋은 방향(낮을수록/높을수록)과 표 원본 CSV는 [docs/figure_slots.md](docs/figure_slots.md)에 있다.
+
 ## 폴더 구조
 
 ```
@@ -53,10 +69,10 @@ python src/make_notebooks.py --run s2 s4 s5 s6   # gemini-3.1-flash-lite
 
 - [x] 시나리오 S1~S7 코드
 - [x] 데이터셋 구성
-- [x] 발표자료 틀 (`slides/pptx_helpers.py`)
+- [x] 발표자료 틀 (`slides/pptx_helpers.py`, `slides/build_slides.py`, 결과 그림 자리는 더미)
 - [ ] Gemini 실험 실행 (약 800회, 11/25 오후 5시 이후)
 - [ ] 검증 5단계 `src/verify.py` (V1 작성됨, V2~V5 미작성)
-- [ ] 발표자료 `build_slides.py`와 pptx 생성
+- [ ] 결과를 채워 발표자료 pptx 완성
 - [ ] 구현물 zip 패키징
 
 한도 때문에 **실험에서 뺀 조건**: S1 self-consistency 다수결, S2 자기 검증, S3 Chain-of-Verification, S5 질문 중립화. 함수는 코드에 남아 있고 결과에는 없다. 유료 키가 생기면 되살릴 수 있다.
