@@ -8,7 +8,7 @@
 - 11/24에 `gemini-3.5-flash-lite`, `gemini-3.1-flash-lite`의 하루 한도(500회)를 모두 썼고 한국 시간 11/25 오후 5시쯤 초기화된다
 - 필요한 호출: 3.5-lite 약 240회(S1, S3, S7), 3.1-lite 약 440회(S2, S4, S5)와 S6 약 110회
 - 공개 데이터셋과 실제 사건·CVE 조사 완료 (`docs/open_datasets.md`). 사건·CVE 표 슬라이드는 `slides/incidents_slide.py`에 있다
-- `slides/build_slides.py`, `src/verify.py` V2~V5는 아직 없다
+- `slides/build_slides.py`는 틀(더미 그림 자리)만 있고 결과 슬라이드는 비어 있다 (`docs/figure_slots.md`). `src/verify.py` V2~V5는 아직 없다
 
 ## 일정
 

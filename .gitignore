@@ -16,3 +16,7 @@ TODO*.md
 
 # 제출용 산출물
 *.zip
+
+# 슬라이드 생성물 (결과가 채워진 최종본은 따로 제출한다)
+slides/build/
+slides/incidents.pptx
