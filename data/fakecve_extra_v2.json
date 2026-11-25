@@ -1,0 +1,329 @@
+{
+ "real_extra": [
+  {
+   "ident": "CVE-2018-11776",
+   "kw": [
+    "struts"
+   ],
+   "nvd_kw_hit": [
+    "struts"
+   ]
+  },
+  {
+   "ident": "CVE-2019-11510",
+   "kw": [
+    "pulse"
+   ],
+   "nvd_kw_hit": [
+    "pulse"
+   ]
+  },
+  {
+   "ident": "CVE-2019-19781",
+   "kw": [
+    "citrix",
+    "netscaler"
+   ],
+   "nvd_kw_hit": [
+    "citrix"
+   ]
+  },
+  {
+   "ident": "CVE-2020-5902",
+   "kw": [
+    "f5",
+    "big-ip",
+    "tmui"
+   ],
+   "nvd_kw_hit": [
+    "big-ip",
+    "tmui"
+   ]
+  },
+  {
+   "ident": "CVE-2021-21972",
+   "kw": [
+    "vcenter",
+    "vmware"
+   ],
+   "nvd_kw_hit": [
+    "vcenter",
+    "vmware"
+   ]
+  },
+  {
+   "ident": "CVE-2021-22205",
+   "kw": [
+    "gitlab",
+    "exiftool"
+   ],
+   "nvd_kw_hit": [
+    "gitlab"
+   ]
+  },
+  {
+   "ident": "CVE-2021-41773",
+   "kw": [
+    "apache",
+    "http server",
+    "httpd"
+   ],
+   "nvd_kw_hit": [
+    "apache",
+    "http server"
+   ]
+  },
+  {
+   "ident": "CVE-2022-1388",
+   "kw": [
+    "f5",
+    "big-ip",
+    "icontrol"
+   ],
+   "nvd_kw_hit": [
+    "f5",
+    "big-ip",
+    "icontrol"
+   ]
+  },
+  {
+   "ident": "CVE-2022-26134",
+   "kw": [
+    "confluence",
+    "atlassian"
+   ],
+   "nvd_kw_hit": [
+    "confluence"
+   ]
+  },
+  {
+   "ident": "CVE-2022-30190",
+   "kw": [
+    "msdt",
+    "follina",
+    "diagnostic"
+   ],
+   "nvd_kw_hit": [
+    "msdt"
+   ]
+  },
+  {
+   "ident": "CVE-2023-34362",
+   "kw": [
+    "moveit"
+   ],
+   "nvd_kw_hit": [
+    "moveit"
+   ]
+  },
+  {
+   "ident": "CVE-2023-22515",
+   "kw": [
+    "confluence",
+    "atlassian"
+   ],
+   "nvd_kw_hit": [
+    "confluence",
+    "atlassian"
+   ]
+  },
+  {
+   "ident": "CVE-2023-20198",
+   "kw": [
+    "cisco",
+    "ios xe"
+   ],
+   "nvd_kw_hit": [
+    "cisco",
+    "ios xe"
+   ]
+  },
+  {
+   "ident": "CVE-2024-3400",
+   "kw": [
+    "palo alto",
+    "pan-os",
+    "globalprotect"
+   ],
+   "nvd_kw_hit": [
+    "palo alto",
+    "pan-os",
+    "globalprotect"
+   ]
+  },
+  {
+   "ident": "CVE-2024-21887",
+   "kw": [
+    "ivanti",
+    "connect secure"
+   ],
+   "nvd_kw_hit": [
+    "ivanti",
+    "connect secure"
+   ]
+  },
+  {
+   "ident": "CVE-2024-6387",
+   "kw": [
+    "openssh",
+    "regresshion"
+   ],
+   "nvd_kw_hit": [
+    "openssh"
+   ]
+  },
+  {
+   "ident": "CVE-2019-0211",
+   "kw": [
+    "apache",
+    "http server",
+    "httpd"
+   ],
+   "nvd_kw_hit": [
+    "apache",
+    "http server"
+   ]
+  },
+  {
+   "ident": "CVE-2018-7600",
+   "kw": [
+    "drupal"
+   ],
+   "nvd_kw_hit": [
+    "drupal"
+   ]
+  },
+  {
+   "ident": "CVE-2017-9805",
+   "kw": [
+    "struts"
+   ],
+   "nvd_kw_hit": [
+    "struts"
+   ]
+  }
+ ],
+ "typo_extra": [
+  {
+   "ident": "CVE-2021-44258",
+   "base": "CVE-2021-44228",
+   "base_kw": [
+    "log4j",
+    "log4shell"
+   ],
+   "typo_kind": "가운데 치환",
+   "typo_pos": 3
+  },
+  {
+   "ident": "CVE-2017-0044",
+   "base": "CVE-2017-0144",
+   "base_kw": [
+    "eternalblue",
+    "smb"
+   ],
+   "typo_kind": "가운데 치환",
+   "typo_pos": 1
+  },
+  {
+   "ident": "CVE-2014-6201",
+   "base": "CVE-2014-6271",
+   "base_kw": [
+    "shellshock",
+    "bash"
+   ],
+   "typo_kind": "가운데 치환",
+   "typo_pos": 2
+  },
+  {
+   "ident": "CVE-2021-35427",
+   "base": "CVE-2021-34527",
+   "base_kw": [
+    "printnightmare",
+    "print spooler",
+    "스풀러"
+   ],
+   "typo_kind": "인접 바꿈",
+   "typo_pos": 1
+  },
+  {
+   "ident": "CVE-2016-5695",
+   "base": "CVE-2016-5195",
+   "base_kw": [
+    "dirty cow",
+    "dirtycow",
+    "copy-on-write"
+   ],
+   "typo_kind": "가운데 치환",
+   "typo_pos": 1
+  },
+  {
+   "ident": "CVE-2019-0078",
+   "base": "CVE-2019-0708",
+   "base_kw": [
+    "bluekeep",
+    "rdp",
+    "원격 데스크톱",
+    "remote desktop"
+   ],
+   "typo_kind": "인접 바꿈",
+   "typo_pos": 1
+  },
+  {
+   "ident": "CVE-2023-44587",
+   "base": "CVE-2023-44487",
+   "base_kw": [
+    "rapid reset",
+    "http/2"
+   ],
+   "typo_kind": "가운데 치환",
+   "typo_pos": 2
+  },
+  {
+   "ident": "CVE-2024-3694",
+   "base": "CVE-2024-3094",
+   "base_kw": [
+    "xz",
+    "liblzma"
+   ],
+   "typo_kind": "가운데 치환",
+   "typo_pos": 1
+  },
+  {
+   "ident": "CVE-2022-24965",
+   "base": "CVE-2022-22965",
+   "base_kw": [
+    "spring4shell",
+    "spring"
+   ],
+   "typo_kind": "가운데 치환",
+   "typo_pos": 1
+  },
+  {
+   "ident": "CVE-2021-4004",
+   "base": "CVE-2021-4034",
+   "base_kw": [
+    "pwnkit",
+    "polkit",
+    "pkexec"
+   ],
+   "typo_kind": "가운데 치환",
+   "typo_pos": 2
+  },
+  {
+   "ident": "CVE-2025-37211",
+   "base": "CVE-2025-32711",
+   "base_kw": [
+    "echoleak",
+    "copilot"
+   ],
+   "typo_kind": "인접 바꿈",
+   "typo_pos": 1
+  }
+ ],
+ "dropped": [
+  [
+   "CVE-2023-46604",
+   "키워드가 NVD 설명에 없음: The Java OpenWire protocol marshaller is vulnerable to Remote Code \nExecution. T"
+  ]
+ ]
+}
