@@ -22,6 +22,19 @@
 
 처음 보면 [쉽게 보기](docs/scenarios_easy.md)부터 읽으면 된다. 시나리오별 실험 설계와 지표는 [docs/scenarios.md](docs/scenarios.md), 데이터는 [docs/datasets.md](docs/datasets.md)에 항목마다 쉬운 설명과 실제 예시를 붙였다.
 
+### 시나리오 v2: 현실 조건으로 다시 보기
+
+v1은 깨끗한 입력으로 현상을 재현하고, **v2는 같은 현상을 현실에 가까운 입력으로 다시 측정한다**(`scenarios_v2/`, `--v2` 플래그로 실행). 구현은 끝났고 **아직 실행 전**이다. 사용법과 한계는 [docs/scenarios_v2.md](docs/scenarios_v2.md), 설계 근거는 [docs/plan_v2.md](docs/plan_v2.md).
+
+| # | v1 → v2 | 근거 사건 | 새 Gemini 호출 |
+|---|---|---|---|
+| S1 v2 | 악성 50% 표본의 정확도 → **악성 1·5·20%일 때 경보의 몇 %가 진짜인가**(정밀도 보정, 알림 1,000건 기준) | 경보 피로 | 0 (v1 캐시 전용) |
+| S2 v2 | "패키지 3개 알려줘" → **코드 생성 요청**에서 `requirements.txt` 추출, PyPI 등록 이력으로 **의심 등록** 분류 | huggingface-cli | 약 360 |
+| S3 v2 | 큰 번호대 가짜 CVE → **실존 CVE에서 숫자 한 자리만 바꾼 오타형**(NVD로 없음 확인), 조용한 치환·교정 제안 지표 | Mata v. Avianca | 약 42 |
+| S4 v2 | 위키 편집 → **외부 메일 경로**, 출처 필터를 **유사 도메인 위조**로 시험(정확 일치 vs 느슨한 필터) | EchoLeak | 약 127 |
+
+S5(PR 리뷰 형식)와 S7(대리 변수)은 시간이 남을 때의 선택 항목이라 구현하지 않았다. v1과 v2는 같은 항목끼리의 비교가 아니라 "현실 조건에서 다시 측정"한 결과다.
+
 ## 결과 (더미)
 
 **아래 그림은 모두 아직 없다(더미).** 실험 전이라 수치나 그래프를 넣지 않았고, 그림 자리와 패널 구성만 정해 두었다. 실험이 끝나 `results/figures/sN.png`가 생기면 `python slides/build_slides.py`가 발표자료의 더미 상자를 그 그림으로 바꾼다. 그때 이 표의 상태를 "완료"로 고치고 그림을 이 문서에 넣는다.
@@ -35,6 +48,10 @@
 | S5 | `results/figures/s5.png` | 취약 코드 탐지율 / 안전 코드 오탐률 | 🟨 더미 (실험 전) |
 | S6 | `results/figures/s6.png` | 완화별 모호·명확 정확도 / 모호 문맥 편향점수 / Qwen 온도와 편향 답 비중 | 🟨 더미 (실험 전) |
 | S7 | `results/figures/s7.png` | Qwen 로짓 마진 격차 / Gemini 반사실 뒤집힘률 | 🟨 더미 (실험 전) |
+| S1 v2 | `results/figures/s1_v2.png` | 악성 비율별 정밀도 / 정상 로그 난이도 가정별 정밀도 | 🟨 더미 (실험 전) |
+| S2 v2 | `results/figures/s2_v2.png` | 환각·의심 등록 패키지 비율 / 작업 유형별 환각률 / 응답당 추천 수 | 🟨 더미 (실험 전) |
+| S3 v2 | `results/figures/s3_v2.png` | v1 큰 번호대 vs v2 오타형 환각률 / 오타형의 환각·조용한 치환·교정 제안 | 🟨 더미 (실험 전) |
+| S4 v2 | `results/figures/s4_v2.png` | 방어별 공격 성공률(정확 일치 vs 느슨한 필터 포함) / 공격 없을 때 정상 질문 결과 | 🟨 더미 (실험 전) |
 
 좋은 방향(낮을수록/높을수록)과 표 원본 CSV는 [docs/figure_slots.md](docs/figure_slots.md)에 있다.
 
@@ -58,6 +75,12 @@ export GEMINI_API_KEY=...        # Windows PowerShell: $env:GEMINI_API_KEY="..."
 # 모델 두 개로 나눠 병렬 실행 (무료 한도가 모델별이라 시나리오마다 모델을 고정했다)
 python src/make_notebooks.py --run s1 s3 s7      # gemini-3.5-flash-lite
 python src/make_notebooks.py --run s2 s4 s5 s6   # gemini-3.1-flash-lite
+
+# v2 (v1을 먼저 실행한 뒤, --v2 플래그가 있어야 scenarios_v2/를 본다)
+python src/make_notebooks.py --v2 --run s1       # 호출 0회 (캐시 전용)
+python src/make_notebooks.py --v2 --run s3       # 약 42회
+python src/make_notebooks.py --v2 --run s2       # 약 360회, 하루에 단독으로
+python src/make_notebooks.py --v2 --run s4       # 약 127회
 ```
 
 - 노트북은 `notebooks/`, 결과는 `results/`에 생기고 둘 다 git에서 제외한다.
