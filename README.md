@@ -45,7 +45,7 @@ scenarios/   S1~S7 코드 (# %% 셀 형식 .py, 노트북으로 변환해 실행
 src/         common.py(Gemini 호출·캐시·Qwen·통계), make_notebooks.py, verify.py, dryrun.py
 slides/      pptx_helpers.py, build_slides.py (발표자료 틀. 결과 그림 자리는 더미)
 data/        데이터셋과 외부 조회 캐시(pypi_exists.json, nvd_cache.json)
-docs/        시나리오·데이터셋 설명, 공개 데이터셋 조사(open_datasets.md), 결과 그림 자리(figure_slots.md), 로드맵
+docs/        시나리오·데이터셋 설명, 공개 데이터셋 조사(open_datasets.md), 결과 그림 자리(figure_slots.md), v2 구현 계획(plan_v2.md), 로드맵
 ```
 
 ## 실행
